@@ -35,15 +35,14 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>Zin Maung</h2>
-							<p>Vehicula consectetuer aliquet<br/>
-							Quam orci nulla<br />
+                            <h2>Zin Maung</h2>
+							<p>Welcome to my portfolio<br/>
 
 							<ul class="actions">
 								<li><a href="#" class="button special">More</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">More</a>
+						<a href="#one" class="more scrolly"></a>
 					</section>
 
 				<!-- One -->
@@ -139,20 +138,42 @@
 						</div>
 					</section>
 
-				<!-- Footer -->
-					
+				<!-- Footer -->					
 			</div>
         <footer id="footer">
 						<ul class="icons">
                             <li><a href="https://github.com/zinmaung" target="_blank"><span class="icon-github"></span></a></li>
                             <li><span class="icon-mail"></span></li>
-                            <li><a href="www.linkedin.com/in/zin-maung-404516108
-" target="_blank"><span class="icon-linkedin"></span></a></li>
+                            <li><a href="www.linkedin.com/in/zin-maung-404516108"target="_blank"><span class="icon-linkedin"></span></a></li>
                             <li><span class="icon-chrome"></span></li>
-                            
-                            
+                                                      
 						</ul>
 					</footer>
 		<!-- Scripts -->
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript">
+            
+        (function(){
+            
+            var mb1 = new TimelineMax();
+            
+            mb1.from('#banner h2', 3, {top: -100, scale: 0.00001, opacity: 5, ease: Back.easeOut.config(1.7), y: -500 });
+            
+            var mb1 = new TimelineMax();
+             mb1.from('#banner p', 10, {top: -100, scale: 0.00001, opacity: 5, ease: Elastic.easeOut });
+            
+            var mb1 = new TimelineMax();
+             mb1.from('#banner ul li', 3, {bottom: -100, scale: 0.00001, opacity: 0, ease: SlowMo.ease.config(0.7, 0.7, false), y: -500 })
+                .to('#banner ul li', 3, {opacity: 1, });
+            var mb1 = new TimelineMax();
+             mb1.from('#banner a', 1, {bottom: -100, scale: 1, opacity: 1, ease: Bounce.easeOut, y: -500 });
+                
+            
+        }());    
+        
+        
+        
+        
+        </script>
 	</body>
 </html>
