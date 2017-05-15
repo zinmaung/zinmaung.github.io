@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="author" content="Zin Maung">
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--Shake Images Link -->
+        <link rel="stylesheet" type="text/css" href="css/csshake.css">
+        
+    
+        <link href='//fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
+        <link rel="stylesheet" href="css/main.css"/>
+        
+        <script src="myScript.js"></script>
+       
+</head>
+
+<body>
+   
+ <div id="cow">
+        <div class="parent">
+            <a class="Character Character-cow"> <a href="cow.html"><img class="image1" src="http://www.clipartlord.com/wp-content/uploads/2014/04/cow15.png" width="120px" height="120px">
+                <img class="background" src="/img/village.png">
+                
+                </a>
+            
+            
+            </a>
+        </div>
+        </div>
+
+<!-- Scripts -->
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript">
+            
+        (function(){
+                       
+            var mb1 = new TimelineMax();
+            mb1.from('.image1', 5, {top: 450, scale: 0.00001, opacity: 0, ease: Power4.easeIn, y: -100 })
+               .to('.image1', 5, {bottom: -100, scale: 0.0005, opacity: 1, ease: Power4.easeInOut, x: 350 })
+                   
+        }());       
+        </script>  
+          
+ </body>
+</html>
