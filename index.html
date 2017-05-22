@@ -8,8 +8,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="fonts/icomoon/style.css">
+        <!--Audio Effects Link -->
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 	</head>
-	<body class="landing">
+	<body class="landing" onload="loadSound();">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -39,7 +41,7 @@
 							<p>Welcome to my portfolio<br/>
 
 							<ul class="actions">
-								<li><a href="#" class="button special">More</a></li>
+                                <li><button onclick="playSound();" class="playSound">Play Sound</button></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly"></a>
@@ -166,14 +168,20 @@
              mb1.from('#banner ul li', 3, {bottom: -100, scale: 0.00001, opacity: 0, ease: SlowMo.ease.config(0.7, 0.7, false), y: -500 })
                 .to('#banner ul li', 3, {opacity: 1, });
             var mb1 = new TimelineMax();
-             mb1.from('#banner a', 1, {bottom: -100, scale: 1, opacity: 1, ease: Bounce.easeOut, y: -500 });
-                
-            
+             mb1.from('#banner a', 1, {bottom: -100, scale: 1, opacity: 1, ease: Bounce.easeOut, y: -500 });           
         }());    
-        
-        
-        
-        
+            
+              var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("assets/audio/Game-Spawn.mp3", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }                 
         </script>
+        
+        
 	</body>
 </html>
