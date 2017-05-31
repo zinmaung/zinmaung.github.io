@@ -1,0 +1,129 @@
+/* CSS reset */
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+img { 
+	border:0;
+}
+header{
+	display: block;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background:url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+}
+
+/*Media*/
+@media(min-width: 360px){
+    .media {
+        background-size: 100%;
+        width: auto;
+    }
+    
+    .media #container #parallax parallax-viewport parallax-layer parallax1{
+        position: relative;
+    }
+    
+}
+
+@media(min-width: 360px){
+    
+    media #container parallax-viewport{
+        width: -950px; 
+        height: -573px;
+    }
+}
+
+@media(min-width: 768px){
+    .media {
+        background-size: 100%;
+        width: auto;
+    }
+    
+    
+    }
+
+@media(min-width: 1024px){
+    .media {
+        background-size: 100%;
+        width: auto;
+    }
+    
+    
+    }
+
+@media(min-width: 1440px){
+    .media {
+        background-size: 100%;
+        width: auto;
+    }
+    
+    
+    }
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+#container{
+	position: relative;
+}
+
+#container > header{
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+
+#container > header h1 strong{
+	font-family: 'Open Sans Condensed','Rock Salt', Arial, sans-serif;
+	padding:0px 5px 0px 5px;
+	line-height:35px; 
+	color:#275973;
+	font-size:28px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 320px){
+    .media #container > header h1 strong{
+        font-size:10px;
+        
+    }
+    
+}
+
+@media (min-width: 768px){
+    .media #container > header h1 strong{
+        font-size:15px;
+        
+    }
+    
+}
+
+@media (min-width: 1440px){
+    .media #container > header h1 strong{
+        font-size:30px;
+        
+    }
+    
+}
+
+.freshdesignweb-top h1{
+	margin:0 auto;
+	width:490px;
+	font-weight:bold;
+	font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size:36px;
+	text-shadow: 2px 2px 0px #F2F2F2, 1px 2px 0px #B1B1B2;
+}
