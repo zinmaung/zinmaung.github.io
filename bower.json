@@ -1,0 +1,22 @@
+{
+  "name": "techshops",
+  "description": "This is a sample project",
+  "main": "index.html",
+  "authors": [
+    "Zin Maung"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.3.4",
+    "susy": "^2.2.12",
+    "normalize-css": "^7.0.0"
+  }
+}
