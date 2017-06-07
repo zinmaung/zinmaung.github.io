@@ -1,82 +1,185 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<head>
-<title>Experimental Design</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    
-    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="fdw-demo.css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<head>
+    <meta name="author" content="Zin Maung">
+		<title>Zin Maung</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+        <!--Audio Effects Link -->
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	</head>
+	<body class="landing">
 
-	<script type="text/javascript" src="js/jquery-v1.8.2.js"></script>
-	<script type="text/javascript" src="js/jquery-events-frame.js"></script>
-	<script type="text/javascript" src="js/jparallax.js"></script>
-</head>
-	
-<body class="media">	
-<script>
-     $(function() {
-	   if(jQuery('#parallax').length != 0){
-		if(jQuery(window).width() > 980){
-			
-			//apply parallax effect
-			jQuery('#parallax .parallax-layer').parallax(
-				{mouseport: jQuery('#parallax')}
-			);
-		
-			$(window).load(function(){
-				jQuery('#parallax .parallax-layer').css('display','block');
-			});
-		}
-	}
- }); 
-</script>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<div id="container">				
-			<header>
-				<h1><strong>My Experimental Design</strong></h1>
-            </header>    
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Zin Maung</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="profile.html">Profile</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-    
-<div id="parallax" class="parallax-viewport">
-    <div class="parallax-layer parallax2">
-    <img src="images/birds1.gif" alt="bird1">
-    </div>
-  
-    <div class="parallax-layer parallax3">
-    <img src="images/plane2.png" alt="big plane">
-    </div>
-    
-    <div class="parallax-layer parallax3">
-    <img src="images/crashpogo.png" alt="plane" height="200" width="100">
-    </div>
-     
-    <div class="parallax-layer parallax1"> 
-    <img src="images/balloons-1.png" alt="baloon">
-    </div> 
-    
-</div>                      
-</div>
-    <div class="parallax-layer parallax4" id="myBird">
-    <img src="images/birds2.gif" alt="eagle">
-    </div>   
-    <script type="text/javascript" src="js/TweenMax.min.js"></script>  
-    
-    <script type="text/javascript">
-    (function(){
-        var tlBird = new TimelineMax({repeat: -1});
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+                            <h2>Zin Maung</h2>
+							<p>Welcome to my portfolio<br/>
+
+							<ul class="actions">
+								<li><a href="profile.html" class="button special">More</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly"></a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>This is my profile page</h2>
+								<p></p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image">
+                                
+                                <a href="https://zinmaung.github.io/kids/">
+                                <img src="images/kids.jpg" alt="Kids" /></a></div>
+                                
+                                
+                                <div class="content">
+								<h2>Kids Site</h2>
+								<p>Interactive site for Kids</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image">
+                                
+                                <a href="https://zinmaung.github.io/gallery/">
+                                <img src="images/pic06.jpg" alt="mac1" /></a></div><div class="content">
+								<h2>My Photo Gallery</h2>
+								<p>Travel around the wrold and being as a photographer is one of my hobbies.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image">
+                                
+                                
+                                <a href="https://zinmaung.github.io/experimental_design1/">
+                                <img src="images/pic07.jpg" alt="mac2" /></a></div><div class="content">
+								<h2>Experimental Design</h2>
+								<p>Still experimenting...</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>My Projects</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Web Designs</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3><a href="http://studentfolders.cascadia.edu/bit298-mobile/Zin/MyMyanmarCuisine2/">Mobile App Designs</a></h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Web Applications</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-headphones">
+									<h3><a href="http://studentfolders.cascadia.edu/bit298-mobile/Zin/JQuery%20Mobile%20Prototype%20-%20Zin's%20Restaurant%20Finder/index.html">Mobile App Development</a></h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart-o">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Arcue ut vel commodo</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="#" class="button fit special">Perferendis</a></li>
+								<li><a href="profile.html" class="button fit">Projects</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->					
+			</div>
+        <footer id="footer">
+						<ul class="icons">
+                            <li><a href="https://github.com/zinmaung" target="_blank"><span class="icon-github"></span></a></li>
+                            <li><a href="https://www.google.com/gmail/" target="_blank"><span class="icon-mail"></span></a></li>
+                            <li><a href="www.linkedin.com/in/zin-maung-404516108"target="_blank"><span class="icon-linkedin"></span></a></li>
+                            <li><a href="https://www.google.com/chrome/" target="_blank"> <span class="icon-chrome"></span></a></li>
+                                                      
+						</ul>
+					</footer>
         
-        tlBird.to('#myBird', 30, {backgroundPositionX: 2000, ease: Power0.easeOut });       
-    }());   
-    </script>
-       
-<script type="text/javascript">
-var get_height = window.innerHeight; 
-var get_height1 =  get_height - 25;
-var get_container = document.getElementById('container');
-get_container.style.height =  get_height1 + 'px';
-       
-</script>
-</body>
+        <h6 align="center">Copyright &copy; 2017 Zin Maung. All Rights Reserved</h6>
+		<!-- Scripts -->
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript">
+            
+        (function(){
+            
+            var mb1 = new TimelineMax();
+            
+            mb1.from('#banner h2', 3, {top: -100, scale: 0.00001, opacity: 5, ease: Back.easeOut.config(1.7), y: -500 });
+            
+            var mb1 = new TimelineMax();
+             mb1.from('#banner p', 10, {top: -100, scale: 0.00001, opacity: 5, ease: Elastic.easeOut });
+            
+            var mb1 = new TimelineMax();
+             mb1.from('#banner ul li', 3, {bottom: -100, scale: 0.00001, opacity: 0, ease: SlowMo.ease.config(0.7, 0.7, false), y: -500 })
+                .to('#banner ul li', 3, {opacity: 1, });
+            var mb1 = new TimelineMax();
+             mb1.from('#banner a', 1, {bottom: -100, scale: 1, opacity: 1, ease: Bounce.easeOut, y: -500 });            
+        }());        
+        </script>
+	</body>
 </html>
